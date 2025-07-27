@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Practice to creating a form</h1>
+    <form action="post">
+
+        <div>
+            <label for="name">Enter your name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div>
+            <label for="email">Enter your email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <div>
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="checkbox" name="checkbox" value="yes">
+            <label for="checkbox">Completed to fill the form</label>
+        </div>
+        <div>
+            <label for="textarea">Enter your comment:</label> <br>
+            <textarea name="textarea" id="textarea" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="place">Choose your area</label>
+            <select name="place" id="place">
+                <option value="dhanbad">Dhanbad</option>
+                <option value="gomoh">Gomoh</option>
+                <option value="parasnath">Parasnath</option>
+                <option value="katras">Katrasgarh</option>
+            </select>
+        </div>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
