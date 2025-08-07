@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+    <style>
+        /* element selector */
+        div {
+             color: aqua;
+            /* background-color: black; */ 
+        }
+
+        /* class selector */
+        .aqua {
+            color: aqua;
+            background-color: black;
+        }
+
+        /* id selector */
+        #green {
+            background-color: green;
+        }
+
+        /* child selector  */
+        div > p {
+            color: red;
+            background-color: yellow;
+        }
+
+        /* descendant selector */
+        div p {
+            color: cyan;
+            background-color: dimgray;
+        }
+
+        /* univeral selector  */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* pseudo selector  */
+        a:visited {
+            color: darkgoldenrod;
+        }
+        a:link {
+            color: green;
+        }
+        a:active {
+            background-color: red;
+        }
+        a:hover {
+            background-color: aqua;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="aqua">
+        Hello I'm first div.
+        <p>I'm a para in div</p>
+    </div>
+    <div id="green">
+        I'm another div.
+        <article>
+            <p>I'm just checking child selector is working under any other tag </p>
+        </article>
+    </div>
+    <a href="https://www.google.com/">Google</a>
+    <a href="https://www.Facebook3.com/">Facebook</a>
+</body>
+</html>
